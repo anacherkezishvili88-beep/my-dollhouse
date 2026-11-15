@@ -1163,24 +1163,7 @@
    "width": 162,
    "band": 5
   },
-  {
-   "id": "characters/francisco",
-   "name": "francisco",
-   "category": "characters",
-   "file": "dollhouseAssets/characters/francisco.png",
-   "natural": [
-    44,
-    113
-   ],
-   "crop": [
-    8,
-    0,
-    29,
-    108
-   ],
-   "width": 70,
-   "band": 5
-  },
+ 
   {
    "id": "characters/gui",
    "name": "gui",
