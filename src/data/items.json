@@ -1,0 +1,1221 @@
+{
+ "categories": [
+  {
+   "id": "furniture",
+   "label": "Furniture",
+   "band": 4,
+   "menu": {
+    "x": 110,
+    "y": 110,
+    "w": 440,
+    "h": 300,
+    "preview": [
+     "fridge",
+     "stove",
+     "bathtub",
+     "chair-1",
+     "couch-1"
+    ]
+   }
+  },
+  {
+   "id": "posters",
+   "label": "Posters",
+   "band": 3,
+   "menu": {
+    "x": 620,
+    "y": 190,
+    "w": 340,
+    "h": 290,
+    "preview": [
+     "poster-3",
+     "poster-1",
+     "poster-2",
+     "poster-4",
+     "poster-6"
+    ]
+   }
+  },
+  {
+   "id": "clothes",
+   "label": "Clothes",
+   "band": 4,
+   "menu": {
+    "x": 1080,
+    "y": 120,
+    "w": 260,
+    "h": 200,
+    "preview": [
+     "shirt-2",
+     "shorts-1",
+     "shirt-3",
+     "boots-1"
+    ]
+   }
+  },
+  {
+   "id": "floors",
+   "label": "Floors",
+   "band": 2,
+   "menu": {
+    "x": 50,
+    "y": 680,
+    "w": 420,
+    "h": 140,
+    "preview": [
+     "carpet-1",
+     "floor",
+     "carpet-3"
+    ]
+   }
+  },
+  {
+   "id": "walls",
+   "label": "Walls",
+   "band": 1,
+   "menu": {
+    "x": 510,
+    "y": 670,
+    "w": 230,
+    "h": 200,
+    "preview": [
+     "wallpaper-2",
+     "window-2"
+    ]
+   }
+  },
+  {
+   "id": "props",
+   "label": "Props",
+   "band": 4,
+   "menu": {
+    "x": 800,
+    "y": 670,
+    "w": 290,
+    "h": 210,
+    "preview": [
+     "plant-1",
+     "alarm",
+     "fan",
+     "horse-1"
+    ]
+   }
+  },
+  {
+   "id": "characters",
+   "label": "Characters",
+   "band": 5,
+   "menu": {
+    "x": 1130,
+    "y": 570,
+    "w": 290,
+    "h": 290,
+    "preview": [
+     "clara",
+     "ana",
+     "henry"
+    ]
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "furniture/bathtub",
+   "name": "bathtub",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/bathtub.png",
+   "natural": [
+    179,
+    179
+   ],
+   "crop": [
+    10,
+    42,
+    158,
+    97
+   ],
+   "width": 250,
+   "band": 4
+  },
+  {
+   "id": "furniture/chair-1",
+   "name": "chair-1",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/chair-1.png",
+   "natural": [
+    203,
+    332
+   ],
+   "crop": [
+    0,
+    0,
+    203,
+    332
+   ],
+   "width": 130,
+   "band": 4
+  },
+  {
+   "id": "furniture/chair-2",
+   "name": "chair-2",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/chair-2.png",
+   "natural": [
+    239,
+    349
+   ],
+   "crop": [
+    0,
+    0,
+    239,
+    349
+   ],
+   "width": 140,
+   "band": 4
+  },
+  {
+   "id": "furniture/couch-1",
+   "name": "couch-1",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/couch-1.png",
+   "natural": [
+    182,
+    113
+   ],
+   "crop": [
+    0,
+    0,
+    182,
+    113
+   ],
+   "width": 340,
+   "band": 4
+  },
+  {
+   "id": "furniture/fridge",
+   "name": "fridge",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/fridge.png",
+   "natural": [
+    55,
+    122
+   ],
+   "crop": [
+    0,
+    0,
+    55,
+    122
+   ],
+   "width": 100,
+   "band": 4
+  },
+  {
+   "id": "furniture/light-1",
+   "name": "light-1",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/light-1.png",
+   "natural": [
+    68,
+    86
+   ],
+   "crop": [
+    0,
+    0,
+    68,
+    86
+   ],
+   "width": 130,
+   "band": 4
+  },
+  {
+   "id": "furniture/stove",
+   "name": "stove",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/stove.png",
+   "natural": [
+    85,
+    147
+   ],
+   "crop": [
+    3,
+    3,
+    78,
+    140
+   ],
+   "width": 110,
+   "band": 4
+  },
+  {
+   "id": "furniture/table-1",
+   "name": "table-1",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/table-1.png",
+   "natural": [
+    148,
+    87
+   ],
+   "crop": [
+    0,
+    0,
+    148,
+    87
+   ],
+   "width": 250,
+   "band": 4
+  },
+  {
+   "id": "furniture/tv",
+   "name": "tv",
+   "category": "furniture",
+   "file": "dollhouseAssets/furniture/tv.png",
+   "natural": [
+    575,
+    764
+   ],
+   "crop": [
+    0,
+    0,
+    575,
+    764
+   ],
+   "width": 150,
+   "band": 4
+  },
+  {
+   "id": "posters/poster-1",
+   "name": "poster-1",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-1.png",
+   "natural": [
+    69,
+    85
+   ],
+   "crop": [
+    0,
+    0,
+    69,
+    85
+   ],
+   "width": 110,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-2",
+   "name": "poster-2",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-2.png",
+   "natural": [
+    63,
+    89
+   ],
+   "crop": [
+    0,
+    0,
+    63,
+    89
+   ],
+   "width": 100,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-3",
+   "name": "poster-3",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-3.png",
+   "natural": [
+    61,
+    61
+   ],
+   "crop": [
+    0,
+    0,
+    61,
+    61
+   ],
+   "width": 100,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-4",
+   "name": "poster-4",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-4.png",
+   "natural": [
+    49,
+    87
+   ],
+   "crop": [
+    0,
+    0,
+    49,
+    87
+   ],
+   "width": 80,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-5",
+   "name": "poster-5",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-5.png",
+   "natural": [
+    40,
+    53
+   ],
+   "crop": [
+    0,
+    0,
+    40,
+    53
+   ],
+   "width": 60,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-6",
+   "name": "poster-6",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-6.png",
+   "natural": [
+    100,
+    100
+   ],
+   "crop": [
+    14,
+    25,
+    72,
+    50
+   ],
+   "width": 110,
+   "band": 3
+  },
+  {
+   "id": "posters/poster-7",
+   "name": "poster-7",
+   "category": "posters",
+   "file": "dollhouseAssets/posters/poster-7.png",
+   "natural": [
+    412,
+    496
+   ],
+   "crop": [
+    0,
+    0,
+    412,
+    496
+   ],
+   "width": 150,
+   "band": 3
+  },
+  {
+   "id": "clothes/boots-1",
+   "name": "boots-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/boots-1.png",
+   "natural": [
+    34,
+    56
+   ],
+   "crop": [
+    0,
+    0,
+    34,
+    56
+   ],
+   "width": 44,
+   "band": 4
+  },
+  {
+   "id": "clothes/bra-1",
+   "name": "bra-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/bra-1.png",
+   "natural": [
+    186,
+    136
+   ],
+   "crop": [
+    5,
+    14,
+    172,
+    117
+   ],
+   "width": 78,
+   "band": 4
+  },
+  {
+   "id": "clothes/bra-2",
+   "name": "bra-2",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/bra-2.png",
+   "natural": [
+    182,
+    159
+   ],
+   "crop": [
+    19,
+    25,
+    156,
+    117
+   ],
+   "width": 78,
+   "band": 4
+  },
+  {
+   "id": "clothes/dress-1",
+   "name": "dress-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/dress-1.png",
+   "natural": [
+    119,
+    290
+   ],
+   "crop": [
+    9,
+    0,
+    105,
+    282
+   ],
+   "width": 64,
+   "band": 4
+  },
+  {
+   "id": "clothes/pants-1",
+   "name": "pants-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/pants-1.png",
+   "natural": [
+    369,
+    508
+   ],
+   "crop": [
+    22,
+    16,
+    325,
+    471
+   ],
+   "width": 95,
+   "band": 4
+  },
+  {
+   "id": "clothes/pants-2",
+   "name": "pants-2",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/pants-2.png",
+   "natural": [
+    379,
+    730
+   ],
+   "crop": [
+    0,
+    0,
+    379,
+    730
+   ],
+   "width": 68,
+   "band": 4
+  },
+  {
+   "id": "clothes/pants-3",
+   "name": "pants-3",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/pants-3.png",
+   "natural": [
+    455,
+    735
+   ],
+   "crop": [
+    0,
+    0,
+    455,
+    735
+   ],
+   "width": 80,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-1",
+   "name": "shirt-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-1.png",
+   "natural": [
+    58,
+    70
+   ],
+   "crop": [
+    0,
+    0,
+    58,
+    70
+   ],
+   "width": 60,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-2",
+   "name": "shirt-2",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-2.png",
+   "natural": [
+    45,
+    63
+   ],
+   "crop": [
+    0,
+    0,
+    45,
+    63
+   ],
+   "width": 58,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-3",
+   "name": "shirt-3",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-3.png",
+   "natural": [
+    40,
+    47
+   ],
+   "crop": [
+    2,
+    2,
+    35,
+    42
+   ],
+   "width": 62,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-4",
+   "name": "shirt-4",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-4.png",
+   "natural": [
+    457,
+    480
+   ],
+   "crop": [
+    0,
+    0,
+    457,
+    480
+   ],
+   "width": 95,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-5",
+   "name": "shirt-5",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-5.png",
+   "natural": [
+    644,
+    569
+   ],
+   "crop": [
+    0,
+    0,
+    644,
+    569
+   ],
+   "width": 95,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-6",
+   "name": "shirt-6",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-6.png",
+   "natural": [
+    311,
+    281
+   ],
+   "crop": [
+    0,
+    0,
+    311,
+    281
+   ],
+   "width": 92,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-7",
+   "name": "shirt-7",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-7.png",
+   "natural": [
+    400,
+    516
+   ],
+   "crop": [
+    0,
+    0,
+    400,
+    516
+   ],
+   "width": 95,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-8",
+   "name": "shirt-8",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-8.png",
+   "natural": [
+    950,
+    724
+   ],
+   "crop": [
+    0,
+    0,
+    950,
+    724
+   ],
+   "width": 100,
+   "band": 4
+  },
+  {
+   "id": "clothes/shirt-9",
+   "name": "shirt-9",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shirt-9.png",
+   "natural": [
+    1164,
+    1012
+   ],
+   "crop": [
+    0,
+    0,
+    1164,
+    1012
+   ],
+   "width": 100,
+   "band": 4
+  },
+  {
+   "id": "clothes/shorts-1",
+   "name": "shorts-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/shorts-1.png",
+   "natural": [
+    56,
+    34
+   ],
+   "crop": [
+    0,
+    0,
+    56,
+    34
+   ],
+   "width": 70,
+   "band": 4
+  },
+  {
+   "id": "clothes/skirt-1",
+   "name": "skirt-1",
+   "category": "clothes",
+   "file": "dollhouseAssets/clothes/skirt-1.png",
+   "natural": [
+    143,
+    122
+   ],
+   "crop": [
+    10,
+    14,
+    129,
+    95
+   ],
+   "width": 85,
+   "band": 4
+  },
+  {
+   "id": "floors/carpet-1",
+   "name": "carpet-1",
+   "category": "floors",
+   "file": "dollhouseAssets/floors/carpet-1.png",
+   "natural": [
+    419,
+    479
+   ],
+   "crop": [
+    0,
+    269,
+    419,
+    56
+   ],
+   "width": 420,
+   "band": 2
+  },
+  {
+   "id": "floors/carpet-2",
+   "name": "carpet-2",
+   "category": "floors",
+   "file": "dollhouseAssets/floors/carpet-2.png",
+   "natural": [
+    138,
+    138
+   ],
+   "crop": [
+    7,
+    58,
+    124,
+    22
+   ],
+   "width": 300,
+   "band": 2
+  },
+  {
+   "id": "floors/carpet-3",
+   "name": "carpet-3",
+   "category": "floors",
+   "file": "dollhouseAssets/floors/carpet-3.png",
+   "natural": [
+    128,
+    91
+   ],
+   "crop": [
+    4,
+    30,
+    122,
+    27
+   ],
+   "width": 260,
+   "band": 2
+  },
+  {
+   "id": "floors/carpet-4",
+   "name": "carpet-4",
+   "category": "floors",
+   "file": "dollhouseAssets/floors/carpet-4.png",
+   "natural": [
+    99,
+    99
+   ],
+   "crop": [
+    6,
+    40,
+    87,
+    19
+   ],
+   "width": 200,
+   "band": 2
+  },
+  {
+   "id": "floors/floor",
+   "name": "floor",
+   "category": "floors",
+   "file": "dollhouseAssets/floors/floor.png",
+   "natural": [
+    407,
+    724
+   ],
+   "crop": [
+    15,
+    443,
+    377,
+    76
+   ],
+   "width": 560,
+   "band": 1.5
+  },
+  {
+   "id": "walls/curtain",
+   "name": "curtain",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/curtain.png",
+   "natural": [
+    273,
+    206
+   ],
+   "crop": [
+    0,
+    0,
+    273,
+    206
+   ],
+   "width": 340,
+   "band": 1
+  },
+  {
+   "id": "walls/wallpaper-1",
+   "name": "wallpaper-1",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/wallpaper-1.png",
+   "natural": [
+    55,
+    74
+   ],
+   "crop": [
+    6,
+    4,
+    43,
+    65
+   ],
+   "width": 120,
+   "band": 1
+  },
+  {
+   "id": "walls/wallpaper-2",
+   "name": "wallpaper-2",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/wallpaper-2.png",
+   "natural": [
+    156,
+    295
+   ],
+   "crop": [
+    0,
+    1,
+    156,
+    294
+   ],
+   "width": 200,
+   "band": 1
+  },
+  {
+   "id": "walls/wallpaper-3",
+   "name": "wallpaper-3",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/wallpaper-3.png",
+   "natural": [
+    156,
+    156
+   ],
+   "crop": [
+    0,
+    0,
+    156,
+    156
+   ],
+   "width": 260,
+   "band": 1
+  },
+  {
+   "id": "walls/window-1",
+   "name": "window-1",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/window-1.png",
+   "natural": [
+    136,
+    163
+   ],
+   "crop": [
+    8,
+    3,
+    125,
+    160
+   ],
+   "width": 220,
+   "band": 1
+  },
+  {
+   "id": "walls/window-2",
+   "name": "window-2",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/window-2.png",
+   "natural": [
+    142,
+    172
+   ],
+   "crop": [
+    4,
+    8,
+    132,
+    157
+   ],
+   "width": 180,
+   "band": 1
+  },
+  {
+   "id": "walls/window-3",
+   "name": "window-3",
+   "category": "walls",
+   "file": "dollhouseAssets/walls/window-3.png",
+   "natural": [
+    62,
+    96
+   ],
+   "crop": [
+    2,
+    5,
+    58,
+    88
+   ],
+   "width": 110,
+   "band": 1
+  },
+  {
+   "id": "props/alarm",
+   "name": "alarm",
+   "category": "props",
+   "file": "dollhouseAssets/props/alarm.png",
+   "natural": [
+    55,
+    30
+   ],
+   "crop": [
+    0,
+    0,
+    55,
+    30
+   ],
+   "width": 90,
+   "band": 4
+  },
+  {
+   "id": "props/bin",
+   "name": "bin",
+   "category": "props",
+   "file": "dollhouseAssets/props/bin.png",
+   "natural": [
+    63,
+    68
+   ],
+   "crop": [
+    0,
+    0,
+    63,
+    68
+   ],
+   "width": 90,
+   "band": 4
+  },
+  {
+   "id": "props/cigarette",
+   "name": "cigarette",
+   "category": "props",
+   "file": "dollhouseAssets/props/cigarette.png",
+   "natural": [
+    284,
+    284
+   ],
+   "crop": [
+    0,
+    0,
+    284,
+    284
+   ],
+   "width": 120,
+   "band": 4
+  },
+  {
+   "id": "props/fan",
+   "name": "fan",
+   "category": "props",
+   "file": "dollhouseAssets/props/fan.png",
+   "natural": [
+    60,
+    105
+   ],
+   "crop": [
+    0,
+    0,
+    60,
+    105
+   ],
+   "width": 100,
+   "band": 4
+  },
+  {
+   "id": "props/gumball",
+   "name": "gumball",
+   "category": "props",
+   "file": "dollhouseAssets/props/gumball.png",
+   "natural": [
+    284,
+    588
+   ],
+   "crop": [
+    0,
+    0,
+    284,
+    588
+   ],
+   "width": 100,
+   "band": 4
+  },
+  {
+   "id": "props/horse-1",
+   "name": "horse-1",
+   "category": "props",
+   "file": "dollhouseAssets/props/horse-1.png",
+   "natural": [
+    169,
+    156
+   ],
+   "crop": [
+    22,
+    0,
+    135,
+    150
+   ],
+   "width": 220,
+   "band": 4
+  },
+  {
+   "id": "props/plant-1",
+   "name": "plant-1",
+   "category": "props",
+   "file": "dollhouseAssets/props/plant-1.png",
+   "natural": [
+    117,
+    114
+   ],
+   "crop": [
+    0,
+    0,
+    117,
+    114
+   ],
+   "width": 170,
+   "band": 4
+  },
+  {
+   "id": "props/toy-1",
+   "name": "toy-1",
+   "category": "props",
+   "file": "dollhouseAssets/props/toy-1.png",
+   "natural": [
+    570,
+    460
+   ],
+   "crop": [
+    160,
+    26,
+    253,
+    387
+   ],
+   "width": 80,
+   "band": 4
+  },
+  {
+   "id": "props/toy-2",
+   "name": "toy-2",
+   "category": "props",
+   "file": "dollhouseAssets/props/toy-2.png",
+   "natural": [
+    600,
+    600
+   ],
+   "crop": [
+    101,
+    21,
+    391,
+    558
+   ],
+   "width": 120,
+   "band": 4
+  },
+  {
+   "id": "characters/ana",
+   "name": "ana",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/ana.png",
+   "natural": [
+    205,
+    291
+   ],
+   "crop": [
+    47,
+    26,
+    130,
+    256
+   ],
+   "width": 132,
+   "band": 5
+  },
+  {
+   "id": "characters/bianca",
+   "name": "bianca",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/bianca.png",
+   "natural": [
+    73,
+    106
+   ],
+   "crop": [
+    2,
+    0,
+    67,
+    103
+   ],
+   "width": 169,
+   "band": 5
+  },
+  {
+   "id": "characters/clara",
+   "name": "clara",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/clara.png",
+   "natural": [
+    133,
+    211
+   ],
+   "crop": [
+    2,
+    0,
+    123,
+    197
+   ],
+   "width": 162,
+   "band": 5
+  },
+  {
+   "id": "characters/francisco",
+   "name": "francisco",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/francisco.png",
+   "natural": [
+    44,
+    113
+   ],
+   "crop": [
+    8,
+    0,
+    29,
+    108
+   ],
+   "width": 70,
+   "band": 5
+  },
+  {
+   "id": "characters/gui",
+   "name": "gui",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/gui.png",
+   "natural": [
+    126,
+    296
+   ],
+   "crop": [
+    16,
+    4,
+    88,
+    281
+   ],
+   "width": 81,
+   "band": 5
+  },
+  {
+   "id": "characters/henry",
+   "name": "henry",
+   "category": "characters",
+   "file": "dollhouseAssets/characters/henry.png",
+   "natural": [
+    97,
+    221
+   ],
+   "crop": [
+    2,
+    8,
+    80,
+    206
+   ],
+   "width": 101,
+   "band": 5
+  }
+ ]
+}

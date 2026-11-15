@@ -1,0 +1,89 @@
+/* The room, the pieces in it, and the overlay screens. */
+.app {
+  position: fixed;
+  inset: 0;
+  touch-action: none; /* lets touch-dragging work without scrolling */
+  user-select: none;
+}
+
+.stage {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+/* ---- Pieces in the room ---- */
+.piece {
+  position: absolute;
+}
+
+.room .cutout {
+  cursor: grab;
+  transition: filter 0.15s;
+}
+
+.room .cutout:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
+}
+
+.app.is-dragging,
+.app.is-dragging .cutout {
+  cursor: grabbing;
+}
+
+.piece.is-dragging > .cutout {
+  filter: var(--lift-shadow);
+}
+
+/* Clothes a character is wearing live in this layer, in their coordinates. */
+.worn {
+  position: absolute;
+  inset: 0 auto auto 0;
+  transform-origin: 0 0;
+}
+
+/* Erase mode: hovering something shows it'll disappear. */
+.app.is-erasing .room .cutout {
+  cursor: not-allowed;
+}
+
+.app.is-erasing .room .cutout:hover {
+  filter: drop-shadow(0 0 0 var(--erase)) opacity(0.45);
+}
+
+/* ---- Overlay screens (cart menu + scatter) ---- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.2s;
+  animation: fade-in 0.2s ease-out;
+}
+
+/* While dragging something out of the scatter screen, fade it away
+   so you can see where you're putting it in the room. */
+.overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-stage {
+  pointer-events: none;
+}
+
+.overlay-stage > * {
+  pointer-events: auto;
+}
+
+.overlay-hint {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
