@@ -19,7 +19,6 @@ export default function CartMenu({ onPick }) {
           <MenuCollage category={category} />
         </button>
       ))}
-      <p className="overlay-hint menu-hint">pick a section · click anywhere else to close</p>
     </>
   );
 }
