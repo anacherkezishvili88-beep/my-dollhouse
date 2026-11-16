@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* the dollhouse fills the whole window, so no scrolling */
+    overflow: hidden;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* The PNG sits inside this box, which hides its empty edges */
+div.cutout {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        max-width: none;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+/* ---------- The room ---------- */
+
+div.dollhouse {
+    position: fixed;
+    inset: 0;
+    /* lets you drag on a touch screen without scrolling the page */
+    touch-action: none;
+    user-select: none;
+}
+
+div.stage {
+    position: absolute;
+    transform-origin: 0 0;
+}
+
+div.room {
+    div.cutout {
+        cursor: grab;
+        transition: filter 0.15s;
+    }
+
+    div.cutout:hover {
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
+    }
+}
+
+div.piece {
+    position: absolute;
+}
+
+/* the piece you're holding gets a bigger shadow, like it's lifted up */
+div.piece.dragging > div.cutout {
+    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.22));
+}
+
+div.dollhouse.is-dragging,
+div.dollhouse.is-dragging div.cutout {
+    cursor: grabbing;
+}
+
+/* the clothes a character is wearing */
+div.worn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+}
+
+/* erase mode: things fade when you hover them */
+div.dollhouse.erasing div.room {
+    div.cutout {
+        cursor: not-allowed;
+    }
+
+    div.cutout:hover {
+        opacity: 0.45;
+    }
+}
+
+/* ---------- Cart menu and scatter screen ---------- */
+
+div.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    transition: opacity 0.2s;
+    animation: fade-in 0.2s ease-out;
+}
+
+/* fades away while you drag something into the room */
+div.overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.overlay-stage {
+    pointer-events: none;
+
+    > * {
+        pointer-events: auto;
+    }
+}
+
+button.menu-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    text-align: left;
+    transition: transform 0.2s ease;
+    animation: pop-in 0.35s backwards ease-out;
+
+    span.menu-label {
+        font-size: 26px;
+        padding: 0 4px;
+    }
+
+    span.menu-collage {
+        position: relative;
+        display: block;
+    }
+}
+
+/* hovering a section tilts it so you can tell it's clickable */
+button.menu-section:hover {
+    transform: rotate(-1.5deg) scale(1.04);
+
+    span.menu-label {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
+    div.menu-preview {
+        filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.22));
+    }
+}
+
+/* the sections pop in one after another */
+button.menu-section:nth-child(2) { animation-delay: 40ms; }
+button.menu-section:nth-child(3) { animation-delay: 80ms; }
+button.menu-section:nth-child(4) { animation-delay: 120ms; }
+button.menu-section:nth-child(5) { animation-delay: 160ms; }
+button.menu-section:nth-child(6) { animation-delay: 200ms; }
+button.menu-section:nth-child(7) { animation-delay: 240ms; }
+
+div.scatter-header {
+    position: absolute;
+    left: 96px;
+    top: 34px;
+
+    h2 {
+        margin: 0 0 4px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    p.hint {
+        margin: 0;
+        font-size: 15px;
+        color: #9a9a9a;
+    }
+}
+
+div.scatter-item {
+    position: absolute;
+    cursor: grab;
+    /* items fly out from the middle of the page */
+    animation: toss 0.55s backwards cubic-bezier(0.2, 0.9, 0.3, 1.15);
+    transition: filter 0.15s, transform 0.15s;
+}
+
+div.scatter-item:hover {
+    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.22));
+    transform: translateY(-4px) rotate(-2deg);
+}
+
+/* ---------- Buttons in the corners ---------- */
+
+button.corner-button {
+    position: fixed;
+    z-index: 20;
+    transition: transform 0.15s;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+button.corner-button:hover {
+    transform: rotate(-6deg) scale(1.1);
+}
+
+button.corner-button:disabled {
+    opacity: 0.3;
+    cursor: default;
+    transform: none;
+}
+
+button.cart-button {
+    top: 22px;
+    left: 24px;
+    width: 58px;
+}
+
+/* the cart wiggles on the empty page so you know to click it */
+button.cart-button.wiggle {
+    animation: wiggle 2.4s ease-in-out infinite;
+}
+
+button.erase-button {
+    top: 28px;
+    right: 28px;
+    width: 92px;
+}
+
+button.erase-button.on {
+    transform: rotate(-4deg) scale(1.12);
+    filter: drop-shadow(0 3px 0 tomato);
+}
+
+button.undo-button {
+    bottom: 24px;
+    right: 28px;
+    width: 80px;
+}
+
+button.sticky-note {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: min(340px, 70vw);
+    transform: translate(-50%, -50%) rotate(-1deg);
+    transition: transform 0.2s;
+    animation: note-in 0.5s ease-out;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+button.sticky-note:hover {
+    transform: translate(-50%, -50%) rotate(1.5deg) scale(1.03);
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.96);
+    }
+}
+
+@keyframes toss {
+    from {
+        opacity: 0;
+        transform: translate(var(--from-x), var(--from-y)) scale(0.2) rotate(-25deg);
+    }
+}
+
+@keyframes wiggle {
+    0%, 80%, 100% { transform: rotate(0); }
+    84% { transform: rotate(-12deg); }
+    88% { transform: rotate(10deg); }
+    92% { transform: rotate(-6deg); }
+    96% { transform: rotate(3deg); }
+}
+
+@keyframes note-in {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -46%) rotate(-6deg);
+    }
+}
