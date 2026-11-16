@@ -137,10 +137,28 @@ button.menu-section {
 button.menu-section:hover {
     transform: rotate(-1.5deg) scale(1.04);
 
-    span.menu-label {
-        text-decoration: underline;
-        text-underline-offset: 5px;
+  span.menu-label {
+  display: inline-block;
+  padding-bottom: 6px; /* Acts like text-underline-offset */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23e63946' stroke-width='1.5' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 20px 6px;
+}
+
+    span.menu-label:hover {
+    animation: wave-wobble 0.8s linear infinite;
     }
+
+    @keyframes wave-wobble {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 20px; /* Matches background-size width for a seamless loop */
+    }
+    }
+
 
     div.menu-preview {
         filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.22));
