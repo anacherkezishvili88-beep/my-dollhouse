@@ -30,6 +30,7 @@ export function CartMenu({ onPick }) {
           <span className="menu-label">{category.label}</span>
           <MenuCollage category={category} />
         </button>
+        
       ))}
     </>
   );
@@ -88,10 +89,7 @@ export function ScatterView({ label, scattered, onPickUp }) {
   return (
     <>
       <div className="scatter-header">
-        <h2>{label}</h2>
-        <p className="hint">
-          drag things into your room · click empty space when you're done
-        </p>
+        <h2>{label}</h2> 
       </div>
 
       {scattered.map((spot) => {
