@@ -1,22 +1,22 @@
 # My Dollhouse
 
-This is an interactive collage dollhouse, and a continuation of my autobiographical p5.js game *Ana's World*. You open a shopping cart full of cut-outs I collected (furniture, posters, floors, walls, props, clothes, and my friends and me as stick-figure dolls), pick a section to throw its items around the page, and then drag them into the room to build a home. Clothes dropped onto a character stay on them, so you can dress everyone up.
+This is an interactive collage dollhouse, and a conceptual continuation of my autobiographical p5.js game *Ana's World*. You open a shopping cart full of cut-outs I collected (furniture, posters, floors, walls, props, clothes, and my friends and me as stick-figure dolls), that the user can drag them into the room to build a home. You can also dress the characters, inspired by the dressup games I used to play in my childhood. 
 
 ## How to Play
 
-- Click the cart in the top left to see the sections.
-- Click a section and its items scatter around the page.
-- Drag an item into the room. Anything in the room can be dragged around again, and whatever you move last goes in front.
-- Drop clothes onto a character to dress them, and drag them off to take them off.
-- Scroll over an item to make it bigger or smaller.
-- `erase`: turn it on and click things to remove them, or drag something onto the button.
-- `ctrl+z`: undo (the button or the keyboard shortcut).
+- Click the cart in the top left to see the sections
+- Click a section and take a look at all the items
+- Drag an item into the room, change scale however you want, and place it wherever you'd like
+- Drop clothes onto a character to dress them, and drag them off to take them off
+- Scroll over an item to make it bigger or smaller
+- `erase`: turn it on and click things to remove them
+- `ctrl+z`: undo
 
 The room is saved in `localStorage`, so it's still there when you come back.
 
 ## How It Works
 
-The project uses React and Vite, set up the same way as the class demo.
+The project uses React and Vite
 
 - `src/items.json` has every item: its section, image file, how wide it's drawn, and the box around the visible part of the image (some of my PNGs have a lot of empty space around them).
 - `src/Dollhouse.jsx` is the main component. It keeps track of everything with `useState`:
@@ -37,14 +37,17 @@ npm install
 npm run dev
 ```
 
-It's published with the `deploy.yaml` GitHub Actions workflow from the class demo (Settings → Pages → Source → GitHub Actions).
+## Process and AI Use
 
-## Resources and AI Use
-
-- The design (Figma prototypes) and all the images are mine.
+- I created the UI and the design of the website all by myself. I used Figma to create the website protptypes: https://www.figma.com/design/iZBQz0fsgUG9tZAGP5BknU/Archive-UI?node-id=0-1&t=A6rf53xqF2mc42H1-1 
+- I collected the website assets from Pinterest and my own images and doodles of stick figures
 - The project setup, `main.jsx`, the `localStorage` + `useEffect` pattern and the `deploy.yaml` workflow follow the class react-demo.
-- I used Claude (Anthropic) to help me plan the idea and write the code: the drag and drop, dressing up the characters, the scatter layout, undo, and checking which image is under the mouse. I then reorganized the code to follow the structure and style of the class demo. Some of the prompts I used:
-  - "I want it for the user to be able to move things around inside the space… maybe I can have a scan of myself in the middle and the user could dress me up"
-  - "The first image is how I want the website to be introduced to the user. The second image is how I want it to look like when the user clicks on the cart button… I want the objects to scatter around the page… I want the user to be able to dress up the characters with the items in the clothes folder"
-  - "help me edit the code I have so far to look similar to my instructor's, at least formatting wise"
-- [MDN: Pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events) and [Document.elementsFromPoint()](https://developer.mozilla.org/en-US/docs/Web/API/Document/elementsFromPoint)
+- I used Claude AI to teach me how to do drag and drop, dress up the characters, and create the scatter layout in the menu. I also used AI to learn how to do checking which image is selected with the mouse
+- I made sure to learn and understand all the code. I reorganized and edited it to how I wanted it. I also used AI to debug some issues like not being able to push changes to Github. 
+
+
+ Some of the prompts I used:
+ - "How do I use react to have the user interact with the website by being able to drag and drop items into the space" 
+ - "How do I use js and react to dress up the characters and be able to select and drag and drop while saving how it looks like" 
+ - "How do I make the scatter layout and animation for it" 
+ - "i'm trying to commit changes in Github Desktop but it's not updating the website or showing up on github website in the actions section" 
