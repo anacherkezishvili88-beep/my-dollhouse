@@ -1144,7 +1144,8 @@
         410
       ],
       "width": 170,
-      "band": 5
+      "band": 5, 
+      "spot": { "x": 660, "y": 340 } 
     },
     {
       "id": "characters/clara",
@@ -1162,7 +1163,8 @@
         197
       ],
       "width": 162,
-      "band": 5
+      "band": 5, 
+      "spot": { "x": 1170, "y": 320 }
     },
     {
       "id": "characters/gui",
@@ -1180,7 +1182,8 @@
         281
       ],
       "width": 81,
-      "band": 5
+      "band": 5, 
+      "spot": { "x": 920, "y": 300 } 
     },
     {
       "id": "characters/henry",
@@ -1198,7 +1201,8 @@
         369
       ],
       "width": 104,
-      "band": 5
+      "band": 5, 
+      "spot": { "x": 420, "y": 320 }
     }
   ]
 }
