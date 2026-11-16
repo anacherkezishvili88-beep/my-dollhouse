@@ -28,7 +28,7 @@ div.cutout {
     }
 }
 
-/* ---------- The room ---------- */
+/* room */
 
 div.dollhouse {
     position: fixed;
@@ -87,7 +87,7 @@ div.dollhouse.erasing div.room {
     }
 }
 
-/* ---------- Cart menu and scatter screen ---------- */
+/* Cart menu and scatter screen */
 
 div.overlay {
     position: fixed;

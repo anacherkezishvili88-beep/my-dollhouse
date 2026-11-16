@@ -189,7 +189,9 @@ When you click a section, its items get thrown around the page.
 The page is split into a grid, every item gets a random cell, and
 then it's moved a little so it doesn't look lined up. */
 
-export function scatterItems(itemList) {
+export function scatterItems(itemList, seed) {
+  // the same seed always gives the same layout
+  let random = seededRandom(seed);
   let left = 60;
   let top = 130;
   let areaWidth = STAGE_WIDTH - 120;
@@ -206,7 +208,7 @@ export function scatterItems(itemList) {
   for (let i = 0; i < columns * rows; i++) {
     cells.push(i);
   }
-  shuffle(cells);
+   shuffle(cells, random);
 
   return itemList.map((item, i) => {
     let width = item.width;
@@ -225,8 +227,8 @@ export function scatterItems(itemList) {
     let spaceY = cellHeight - height * scale;
     let x = left + column * cellWidth + spaceX / 2;
     let y = top + row * cellHeight + spaceY / 2;
-    x = x + (Math.random() - 0.5) * spaceX * 0.7;
-    y = y + (Math.random() - 0.5) * spaceY * 0.7;
+    x = x + (random() - 0.5) * spaceX * 0.7;
+    y = y + (random() - 0.5) * spaceY * 0.7;
 
     return {
       itemId: item.id,
@@ -241,13 +243,27 @@ export function scatterItems(itemList) {
   });
 }
 
-function shuffle(list) {
+function shuffle(list, random) {
   for (let i = list.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
+    let j = Math.floor(random() * (i + 1));
     let temp = list[i];
     list[i] = list[j];
     list[j] = temp;
   }
+}
+
+// Makes "random" numbers that come out the same every time for the
+// same seed (a word, like the section's name)
+function seededRandom(seed) {
+  let value = 1;
+  for (let i = 0; i < seed.length; i++) {
+    value = (value * 31 + seed.charCodeAt(i)) % 2147483646;
+  }
+  value = value + 1;
+  return function () {
+    value = (value * 16807) % 2147483647;
+    return (value - 1) / 2147483646;
+  };
 }
 
 /* ---------- What's under the mouse? ----------

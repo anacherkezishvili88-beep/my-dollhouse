@@ -242,7 +242,7 @@ export function Dollhouse() {
 
   function openSection(categoryId) {
     setSection(categoryId);
-    setScattered(scatterItems(itemsInCategory(categoryId)));
+    setScattered(scatterItems(itemsInCategory(categoryId), categoryId));
     setScatterRound(scatterRound + 1);
     setView("scatter");
   }
