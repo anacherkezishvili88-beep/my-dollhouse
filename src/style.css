@@ -204,7 +204,7 @@ div.scatter-item:hover {
     transform: translateY(-4px) rotate(-2deg);
 }
 
-/* ---------- Buttons in the corners ---------- */
+/*  Buttons in the corners  */
 
 button.corner-button {
     position: fixed;
@@ -274,7 +274,7 @@ button.sticky-note:hover {
     transform: translate(-50%, -50%) rotate(1.5deg) scale(1.03);
 }
 
-/* ---------- Animations ---------- */
+/*  Animations */
 
 @keyframes fade-in {
     from {
