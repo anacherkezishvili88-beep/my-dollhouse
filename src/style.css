@@ -150,19 +150,6 @@ button.menu-section:hover {
     animation: wave-wobble 0.8s linear infinite;
     }
 
-    @keyframes wave-wobble {
-    0% {
-        background-position-x: 0;
-    }
-    100% {
-        background-position-x: 20px; /* Matches background-size width for a seamless loop */
-    }
-    }
-
-
-    div.menu-preview {
-        filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.22));
-    }
 }
 
 /* the sections pop in one after another */
@@ -308,5 +295,14 @@ button.sticky-note:hover {
     from {
         opacity: 0;
         transform: translate(-50%, -46%) rotate(-6deg);
+    }
+}
+
+@keyframes wave-wobble {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 20px;
     }
 }
