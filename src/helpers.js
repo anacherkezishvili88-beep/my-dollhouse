@@ -214,6 +214,19 @@ export function scatterItems(itemList, seed) {
     let width = item.width;
     let height = heightForWidth(item, width);
 
+     // If the item has a "spot" in items.json, put it exactly there
+    if (item.spot) {
+      return {
+        itemId: item.id,
+        x: item.spot.x,
+        y: item.spot.y,
+        scale: 1,
+        fromX: STAGE_WIDTH / 2 - item.spot.x - width / 2,
+        fromY: STAGE_HEIGHT / 2 - item.spot.y - height / 2,
+        delay: i * 30,
+      };
+    }
+
     // shrink anything that's too big for its cell
     let scale = Math.min(
       1,

@@ -1126,6 +1126,7 @@
       ],
       "width": 132,
       "band": 5
+      "spot": { "x": 170, "y": 320 }
     },
     {
       "id": "characters/bianca",
