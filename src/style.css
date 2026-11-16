@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: white;
-    font-family: "Helvetica Neue", Helvetica;
+    font-family: "Helvetica Bold", Helvetica;
     /* the dollhouse fills the whole window, so no scrolling */
     overflow: hidden;
 }
